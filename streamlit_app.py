@@ -1,18 +1,17 @@
 
 import streamlit as st
-import pandas as pd
-import numpy as np
+import yfinance as yf
+import seaborn as sns
 
 
+#Titulo
+st.markdown("Simulador de instrumentos Allianz Patrimonial")
 
+st.markdown("Seleccionar ETFs")
 
-st.markdown("Simulador de inversión")
-st.markdown("Selecciona uno, dos o tres ETFs para comparar su rendimiento y simular la inversión:")
-
-# Selector de periodos de tiempo
+# Desplegable para elegir el periodo
 periodos = ['1mo', '3mo', '6mo', '1y', 'ytd', '3y', '5y', '10y']
 seleccion_periodo = st.selectbox('Selecciona el periodo de tiempo', periodos)
-
 
 
 

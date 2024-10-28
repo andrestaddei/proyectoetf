@@ -1,5 +1,6 @@
 import streamlit as st
-pip install yfinance
+import pandas as pd
+
 
 st.markdown("Simulador de inversión")
 
